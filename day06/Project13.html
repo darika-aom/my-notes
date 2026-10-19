@@ -1,0 +1,88 @@
+<!--โครงสร้างเเบบฟอมกรอกข้อมูลอย่างง่าย-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+    <h1 align="center">หน้าลงทะเบียน</h1> 
+    <form align="center">
+        <div>
+            <label for="fn">ชื่อจริง</label> 
+            <input type="text" name="fname" id="fn" placeholder="ป้อนชื่อของคุณ" required>       
+        </div>
+         <div>
+            <label for="ln">นามสกุล</label> 
+            <input type="text" name="lname" id="ln" placeholder="ป้อนนามสกุลของคุณ">       
+        </div>
+        <div>
+            <label for="em">อีเมล</label> 
+            <input type="email" name="email" id="em" placeholder="             @cass.com" value="@cass.com">       
+        </div>
+        <div>
+            <label for="ps">รหัส</label> <!--readonlyก้คือช่องนั้นๆจะล็อคไม่สามารถกําหนดค่าได้-->
+            <input type="password" name="password" id="ps" placeholder="ป้อนรหัสของคุณ">       
+        </div>
+        <div>
+            <label for="ad">ที่อยู่</label>
+            <textarea name="ad" id="ad" cols="20" rows="5" placeholder="ป้อนที่อยู่ของคุณ"></textarea> 
+        </div>
+        <div>
+            <label for="ee">อายุ</label>
+            <input type="number" name="ega" id="ee" min="18" max="67" placeholder="ป้อนอายุของคุณ"> 
+        </div>
+        <div>
+            <label for="bd">วันเกิด</label>
+            <input type="date" id="bd" name="day">
+        </div>
+        <div>
+            <label for="tn">เบอร์โทร</label>
+            <input type="tel" id="tn" name="tel">
+        </div>
+        <div>
+            <label for="cl">สีที่ชอบ</label>
+            <input type="color" id="cl" name="color">
+        </div>
+        <div>
+            <label for="r">ช่วงตัวเลข</label>
+            <input type="range" name="rangenumber" id="r" min="18" max="35" >
+        </div>
+        <div>
+            <label for="ca">ระดับการศึกษา</label>
+            <select name="cass" id="ca">
+                <option value="มัธยมศึกษา">มัธยมศึกษา</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="ปริญญาโท">ปริญญาโท</option>
+                <option value="ปริญญาเอก">ปริญญาเอก</option>
+            </select>
+        </div>      
+        <div> <!--เลือกได้ตัวเลือกเดียว-->
+            <label>เพศ</label>
+            <input type="radio" name="plll">หญิง
+            <input type="radio" name="plll">ชาย
+            <input type="radio" name="plll">อื่นๆ
+        </div>
+        <div> <!--อันนี้เลือกได้หลายตัวเลือก-->
+            <label>สิ่งที่ชอบ</label>
+            <input type="checkbox" name="lppp">นอนเน่า
+            <input type="checkbox" name="lppp">ไถตต.
+            <input type="checkbox" name="lppp">เขียนโค้ด
+            <input type="checkbox" name="lppp">อื่นๆ
+        </div>
+        <div>
+            <label for="f">เเนบเอกสารของคุณ</label>
+            <input type="file" id="f" name="file">
+        </div>
+        <div>
+            <label for="w">เว็บของคุณ</label>
+            <input type="url" id="w" name="www">
+        </div>
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">
+            <input type="reset" value="ล้างข้อมูล">
+        </div>
+    </form>    
+</body>
+</html>
